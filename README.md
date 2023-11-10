@@ -1,1 +1,1 @@
-# ekaigpt
+# ekai-gpt
