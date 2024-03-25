@@ -246,6 +246,21 @@ export default function Home() {
             centeredSlides={true}
             loop={true}
             scrollbar={{ draggable: true, dragSize: 120 }}
+            breakpoints={{
+              0: {
+                slidesPerView: 1.6,
+              },
+              400:{
+                slidesPerView:1.6,
+              },
+              639: {
+                slidesPerView: 1.6,
+              },
+              865:{
+                slidesPerView: 4.1
+              }
+              }
+            }
           >
             <SwiperSlide>
                   <div className='testimonialbox text-center p-3 p-lg-4'>
