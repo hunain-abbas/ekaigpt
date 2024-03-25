@@ -14,7 +14,7 @@ export default async function handler(req, res) {
         secure: false,
         auth: {
           user: 'website.mailer@rayn.group',
-          pass: 'jepfsuddryutdmf'
+          pass: 'vkvnhgwfwepenlly'
         }
       });
 
