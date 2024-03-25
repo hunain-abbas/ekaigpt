@@ -73,7 +73,7 @@ export default function Home() {
       <main>
         <header className='mb-auto'>
           <div className='container'>
-            <div className='brand-logo py-5'>
+            <div className='brand-logo d-flex justify-content-between py-5'>
             <svg width='94' height='44' viewBox='0 0 94 44' fill='none' xmlns='http://www.w3.org/2000/svg'>
               <path d='M78.0811 38.1962C76.648 39.8119 74.9918 41.0993 73.1096 42.0598C71.2289 43.0204 69.2359 43.5007 67.1306 43.5007C64.8023 43.5007 62.6191 43.0858 60.5809 42.2574C58.5427 41.4291 56.7399 40.2511 55.1727 38.7221C53.6038 37.2387 52.3843 35.4816 51.511 33.451C50.6377 31.4219 50.2011 29.294 50.2011 27.0674C50.2011 24.8407 50.6377 22.7128 51.511 20.6837C52.3843 18.6546 53.6038 16.8763 55.1727 15.3473C56.7399 13.8198 58.5411 12.6418 60.5809 11.8119C62.6175 10.9836 64.8023 10.5687 67.1306 10.5687C69.2811 10.5687 71.3068 11.0049 73.2109 11.8773C75.1135 12.7513 76.7369 13.9733 78.0811 15.5449V10.5611H84.1272V43.4232H78.0811V38.1962ZM62.8655 17.0739C61.4994 17.6196 60.3236 18.3734 59.3395 19.3325C58.354 20.2931 57.582 21.4391 57.0222 22.7706C56.4623 24.102 56.1832 25.4882 56.1832 26.9275C56.1832 28.3669 56.4623 29.7424 57.0222 31.0526C57.582 32.3628 58.354 33.4981 59.3395 34.4572C60.3236 35.4178 61.4994 36.1702 62.8655 36.7158C64.2316 37.2615 65.6538 37.5335 67.1306 37.5335C68.6074 37.5335 70.0187 37.2615 71.363 36.7158C72.7072 36.1702 73.8706 35.4178 74.8562 34.4572C75.8402 33.4981 76.6137 32.3612 77.1735 31.0526C77.7334 29.7424 78.0125 28.3684 78.0125 26.9275C78.0125 25.4867 77.7318 24.102 77.1735 22.7706C76.6137 21.4391 75.8402 20.2931 74.8562 19.3325C73.8706 18.3734 72.7057 17.6196 71.363 17.0739C70.0187 16.5283 68.609 16.2562 67.1306 16.2562C65.6522 16.2562 64.23 16.5298 62.8655 17.0739Z' fill='#FDB918'/>
               <path d='M56.2549 43.4202H47.7543L33.5398 29.5692V23.7297L47.0416 10.5672H55.5422L39.0416 26.6464L56.2549 43.4202Z' fill='#FDB918'/>
@@ -81,8 +81,8 @@ export default function Home() {
               <path d='M85.6819 4.45865C85.6819 2.22437 87.5158 0.499268 89.7443 0.499268C91.9727 0.499268 93.8035 2.22437 93.8035 4.45865C93.8035 6.69293 91.9712 8.41804 89.7443 8.41804C87.5173 8.41804 85.6819 6.63062 85.6819 4.45865Z' fill='#FDB918'/>
               <path d='M0.803589 27.1115C0.803589 17.3415 7.15839 10.5733 16.4621 10.5733C25.7659 10.5733 31.5296 16.7031 31.5296 25.9624V28.1967L6.76385 28.2606C7.22233 34.8372 10.7607 38.4774 16.8536 38.4774C21.6349 38.4774 24.7819 36.5623 25.8283 32.986H31.5936C30.0201 39.6903 24.6477 43.4582 16.7226 43.4582C7.28939 43.4582 0.803589 36.8162 0.803589 27.1115ZM6.8964 24.2373H25.3713C25.3713 19.065 21.8984 15.6164 16.4621 15.6164C11.0259 15.6164 7.68081 18.7459 6.8964 24.2373Z' fill='#FDB918'/>
             </svg>                      
-              <div className='justify-content-center px-5 px-md-0 float-md-end d-none d-sm-block'>
-                <a href='#' className='btnsolid' data-bs-toggle='modal' data-bs-target='#reachout' >Get Started Now</a>
+              <div className=''>
+                <a href='#' className='btnsolid' data-bs-toggle='modal' data-bs-target='#reachout'>Get Started Now</a>
               </div>
               <div className='modal fade show' id='reachout' aria-modal='true' role='dialog'>
                 <div className='modal-dialog modal-dialog-centered modal-xl' role='document'>
@@ -106,7 +106,7 @@ export default function Home() {
                         </ul>
                         </div>
                       </div>
-                      <div className='offset-md-1 col-md-5'>
+                      <div className='col-md-6'>
                         <div className='modal-body p-0 p-md-3'>
                         <ContactForm />
                         </div>
@@ -125,11 +125,11 @@ export default function Home() {
               <div className='text-center col-md-12 col-lg-10 mx-auto'>
                 <h1 className='mb-3 mb-lg-4 text-center mw-80'><span className='tx-grad'>Instant insights</span>Smarter decisions</h1>
                 <p>Make faster business decisions with effortless<br></br>AI-powered data analysis</p>
-                <a href='#' className='btnsolid'>Get Started Now</a>
+                <a href='#' className='btnsolid' data-bs-toggle='modal' data-bs-target='#reachout'>Get Started Now</a>
               </div>
               <div className='video-container'>
                 {/* <Image src='/assets/images/placeholder.png' alt='image' /> */}
-                <video poster='/assets/images/placeholder.png' preload='auto' controls autoPlay>
+                <video poster='/assets/images/placeholder.png' preload='auto' controls>
                   <source src='/assets/ekaigpt.mp4' />
                 </video>
               </div>
@@ -332,31 +332,9 @@ export default function Home() {
           <div className='container'>
             <div className='row'>
               <div className='col-md-12'>
-              <h2 className='w-100 text-center mb-3 mb-md-5 mx-auto'>Here’s how to get started</h2>
+              <h2 className='w-100 text-center mx-auto mb-large'>Here’s how to get started</h2>
               </div>
-                <div className='col-md-5'>
-                  <ul className='nav nav-pills flex-column nav-pills -100' id='pills-tab' role='tablist'>
-                    <li className='nav-item' role='presentation'>
-                      <button className='nav-link text-primary fw-semibold active position-relative' id='pills-home-tab' data-bs-toggle='pill' data-bs-target='#howtostarted1' type='button' role='tab' aria-controls='pills-home' aria-selected='true'>Integrate Database</button>
-                    </li>
-                    <li className='nav-item' role='presentation'>
-                      <button className='nav-link text-primary fw-semibold position-relative' id='pills-profile-tab' data-bs-toggle='pill' data-bs-target='#howtostarted2' type='button' role='tab' aria-controls='pills-profile' aria-selected='false'>Model Your Data</button>
-                    </li>
-                    <li className='nav-item' role='presentation'>
-                      <button className='nav-link text-primary fw-semibold position-relative' id='pills-contact-tab' data-bs-toggle='pill' data-bs-target='#howtostarted3' type='button' role='tab' aria-controls='pills-contact' aria-selected='false'>Create Projects</button>
-                    </li>
-                    <li className='nav-item' role='presentation'>
-                      <button className='nav-link text-primary fw-semibold position-relative' id='pills-home-tab' data-bs-toggle='pill' data-bs-target='#howtostarted4' type='button' role='tab' aria-controls='pills-home' aria-selected='true'>Add Team Members</button>
-                    </li>
-                    <li className='nav-item' role='presentation'>
-                      <button className='nav-link text-primary fw-semibold position-relative' id='pills-profile-tab' data-bs-toggle='pill' data-bs-target='#howtostarted5' type='button' role='tab' aria-controls='pills-profile' aria-selected='false'>Chat with your data</button>
-                    </li>
-                    <li className='nav-item' role='presentation'>
-                      <button className='nav-link text-primary fw-semibold position-relative' id='pills-contact-tab' data-bs-toggle='pill' data-bs-target='#howtostarted6' type='button' role='tab' aria-controls='pills-contact' aria-selected='false'>Visualize & Share Insights</button>
-                    </li>
-                  </ul>
-                </div>
-                <div className='col-md-7'>
+                <div className='col-md-7 order-md-1'>
                   <div className='tab-content w-100' id='pills-tabContent'>
                     <div className='tab-pane fade show active' id='howtostarted1' role='tabpanel' aria-labelledby='pills-home-tab'>
                       <video preload='auto' autoPlay muted loop>
@@ -390,6 +368,28 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
+                <div className='col-md-5 order-md-0'>
+                  <ul className='nav nav-pills flex-column nav-pills -100' id='pills-tab' role='tablist'>
+                    <li className='nav-item' role='presentation'>
+                      <button className='nav-link text-primary fw-semibold active position-relative' id='pills-home-tab' data-bs-toggle='pill' data-bs-target='#howtostarted1' type='button' role='tab' aria-controls='pills-home' aria-selected='true'>Integrate Database</button>
+                    </li>
+                    <li className='nav-item' role='presentation'>
+                      <button className='nav-link text-primary fw-semibold position-relative' id='pills-profile-tab' data-bs-toggle='pill' data-bs-target='#howtostarted2' type='button' role='tab' aria-controls='pills-profile' aria-selected='false'>Model Your Data</button>
+                    </li>
+                    <li className='nav-item' role='presentation'>
+                      <button className='nav-link text-primary fw-semibold position-relative' id='pills-contact-tab' data-bs-toggle='pill' data-bs-target='#howtostarted3' type='button' role='tab' aria-controls='pills-contact' aria-selected='false'>Create Projects</button>
+                    </li>
+                    <li className='nav-item' role='presentation'>
+                      <button className='nav-link text-primary fw-semibold position-relative' id='pills-home-tab' data-bs-toggle='pill' data-bs-target='#howtostarted4' type='button' role='tab' aria-controls='pills-home' aria-selected='true'>Add Team Members</button>
+                    </li>
+                    <li className='nav-item' role='presentation'>
+                      <button className='nav-link text-primary fw-semibold position-relative' id='pills-profile-tab' data-bs-toggle='pill' data-bs-target='#howtostarted5' type='button' role='tab' aria-controls='pills-profile' aria-selected='false'>Chat with your data</button>
+                    </li>
+                    <li className='nav-item' role='presentation'>
+                      <button className='nav-link text-primary fw-semibold position-relative' id='pills-contact-tab' data-bs-toggle='pill' data-bs-target='#howtostarted6' type='button' role='tab' aria-controls='pills-contact' aria-selected='false'>Visualize & Share Insights</button>
+                    </li>
+                  </ul>
+                </div>
             </div>
           </div>
         </section>
@@ -419,7 +419,7 @@ export default function Home() {
                     </h2>
                     <div id='collapseOne' className='accordion-collapse collapse show' aria-labelledby='headingOne' data-bs-parent='#accordionExample'>
                       <div className='accordion-body'>
-                        <strong>This is the first accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. also worth noting that just about any HTML can go within the though the transition does limit overflow.
+                      ekai brings you insights from your enterprise data in minutes. It is an AI-native analytics tool that allows users to chat with their data, enabling them to make informed decisions effortlessly. ekai excels at drawing insights from data to support strategic business decisions, while prioritizing data privacy and security.
                       </div>
                     </div>
                   </div>
@@ -449,7 +449,7 @@ export default function Home() {
                   </div>
                   <div className='accordion-item'>
                     <h2 className='accordion-header' id='headingFour'>
-                      <button className='accordion-button' type='button' data-bs-toggle='collapse' data-bs-target='#collapseFour' aria-expanded='true' aria-controls='collapseFour'>
+                      <button className='accordion-button collapsed' type='button' data-bs-toggle='collapse' data-bs-target='#collapseFour' aria-expanded='true' aria-controls='collapseFour'>
                       How can you help make ekai&apos;s responses better?
                       </button>
                     </h2>
@@ -463,7 +463,7 @@ export default function Home() {
                   </div>
                   <div className='accordion-item'>
                     <h2 className='accordion-header' id='headingFive'>
-                      <button className='accordion-button collapsed' type='button' data-bs-toggle='collapse' data-bs-target='#collapseFive' aria-expanded='false' aria-controls='collapseFive'>
+                      <button className='accordion-button collapsed collapsed' type='button' data-bs-toggle='collapse' data-bs-target='#collapseFive' aria-expanded='false' aria-controls='collapseFive'>
                       Do I need data or engineering knowledge to use ekai? 
                       </button>
                     </h2>
@@ -487,7 +487,7 @@ export default function Home() {
                   </div>
                   <div className='accordion-item'>
                     <h2 className='accordion-header' id='headingSeven'>
-                      <button className='accordion-button' type='button' data-bs-toggle='collapse' data-bs-target='#collapseSeven' aria-expanded='true' aria-controls='collapseSeven'>
+                      <button className='accordion-button collapsed' type='button' data-bs-toggle='collapse' data-bs-target='#collapseSeven' aria-expanded='true' aria-controls='collapseSeven'>
                       What data sources does ekai support? 
                       </button>
                     </h2>
@@ -533,7 +533,7 @@ export default function Home() {
               <div className='col-md-12'>
               <h2 className='w-100 text-center text-white mb-3 mb-md-5 mx-auto'>Chat your way to <br></br>better business decisions</h2>
               <p className='text-white my-3 my-md-4'>Make ekai your smart data assistant</p>
-                <a href='#' className='btnsolid whiteco'>Get Started Now</a>
+                <a href='#' className='btnsolid whiteco' data-bs-toggle='modal' data-bs-target='#reachout'>Get Started Now</a>
                 <Image className='d-block mx-auto mt-2 mt-md-4' src='/assets/images/business-decision.png' alt='image' />
               </div>
               </div>
