@@ -22,10 +22,9 @@ function Herosection() {
         <div className='text-center col-md-12 col-lg-10 mx-auto'>
           <h1 className='mb-3 mb-lg-4 text-center mw-80'><span className='tx-grad'>Instant insights</span>Smarter decisions</h1>
           <p>Make faster business decisions with effortless<br></br>AI-powered data analysis</p>
-          <a href='#' className='btnsolid' data-bs-toggle='modal' data-bs-target='#reachout'>Get Started Now</a>
+          <a href='#footer' className='btnsolid'>Get Started Now</a>
         </div>
         <div className='video-container'>
-          {/* <Image src='/assets/images/placeholder.png' alt='image' /> */}
           <video poster='/assets/images/placeholder.png' preload='auto' autoPlay muted>
             <source src='/assets/ekaigpt.mp4' />
           </video>

@@ -19,8 +19,21 @@ SwiperCore.use([Scrollbar]);
 
 export default function Home() {
   useEffect(() => {
-
-
+    function scrollToAnchor(anchorId) {
+      const element = document.getElementById(anchorId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  
+    // Add event listeners to anchor links to call scrollToAnchor function
+    document.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault(); // Prevent default anchor behavior
+        const anchorId = this.getAttribute('href').substring(1); // Remove leading '#'
+        scrollToAnchor(anchorId);
+      });
+    });
 }, []);
 
 
@@ -67,7 +80,7 @@ export default function Home() {
         /> */}
       </Head>
       <body className=''>
-      <main data-scroll-container>
+      <main>
         <header className='mb-auto'>
           <div className='container'>
             <div className='brand-logo text-center py-5'>
@@ -344,13 +357,13 @@ export default function Home() {
                 </div>
                 <div className='col-md-7'>
                   <nav className='nav'>
-                    <a className='nav-link active' aria-current='page' href='#'>Overview</a>
-                    <a className='nav-link' href='#'>How Ekai Works</a>
+                    <a className='nav-link active' aria-current='page' href='#herosection'>Overview</a>
+                    <a className='nav-link' href='#herosection'>How Ekai Works</a>
                     <a className='nav-link' href='#'>Privacy Policy</a>
-                    <a className='nav-link' href='#'>Features</a>
-                    <a className='nav-link' href='#'>Integrations</a>
-                    <a className='nav-link' href='#'>Use Cases</a>
-                    <a className='nav-link' href='#'>FAQs</a>
+                    <a className='nav-link' href='#features'>Features</a>
+                    <a className='nav-link' href='#integrateekai'>Integrations</a>
+                    <a className='nav-link' href='#testimonial'>Use Cases</a>
+                    <a className='nav-link' href='#faqs'>FAQs</a>
                   </nav> 
                 </div>
               </div>

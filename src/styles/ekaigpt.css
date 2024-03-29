@@ -120,7 +120,6 @@ header {
   position: absolute;
   z-index: 9999;
   top: 0;
-  bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
@@ -420,6 +419,12 @@ footer#footer {
 .swiper-wrapper {
   margin-bottom: 4rem;
 }
+
+.innerdiv {
+  width: 98%;
+  margin: auto;
+}
+
 .testimonialbox {
   border: 1px solid #FDB918;
   border-radius: 1rem;
@@ -442,7 +447,7 @@ footer#footer {
   color: #000000;
 }
 .testimonialbox .bottombox {
-  width: 80%;
+  width: 84%;
   margin: auto;
 }
 .testimonialbox .bottombox p {
@@ -648,29 +653,12 @@ body {
     padding-bottom: 3.5rem;
   }
 
-  .talk-expert input[type=email] {
-    width: 280px;
-  }
 
-  .featurebox {
-    padding: 2rem 2rem;
-    border-radius: 1.4rem;
-  }
-
-  .featurebox.d-flex .contentbox {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .featurebox.d-flex>div {
-    flex: 0 0 100%;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .featurebox .contentbox {
-    text-align: center;
-    padding-bottom: 2rem;
+  section.herosec {
+    background-image: url('assets/images/herobg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
   }
 
   .testimonialbox .bottombox p {
@@ -701,6 +689,10 @@ body {
 
   .brand-logo svg {
       width: 120px;
+  }
+
+  header {
+    position: relative;
   }
 
   h1 {
@@ -745,6 +737,10 @@ body {
 
   section.herosec {
       padding-top: 1rem;
+  }
+  section#howtostarted {
+    height: auto;
+    padding-bottom: 0;
   }
 
   .video-container {
@@ -816,6 +812,10 @@ body {
       margin-bottom: 0px;
   }
 
+  section#integrateekai {
+    padding: 4rem 1.5rem;
+  }
+
   #integrateekai .bg-yellow,
   #quickinsight .bg-yellow {
       border-radius: 1rem;
@@ -824,7 +824,9 @@ body {
 
   #integrateekai img {
     margin-top: 1.25rem;
+    max-width: 199px;
   }
+  
 
   .processbox.center:before {
       display: none;
@@ -849,15 +851,16 @@ body {
   }
 
   .mb-large {
-      margin-bottom: 4rem;
+      margin-bottom: 2rem;
   }
   .brand-logo a.btnsolid {
       margin: 0 0;
   }
 
   .footer-inner nav a {
-      font-size: 0.6rem;
+      font-size: 0.9rem;
       margin: 0rem 0rem;
+      padding-left: 0;
   }
 
   footer img {
@@ -874,27 +877,14 @@ body {
       padding: 1rem 4rem;
   }
 
+  .iconbox h4 {
+    font-size: 0.875rem;
+  }
+
   button.accordion-button {
       font-size: 1.2rem;
       padding: 2rem 1rem !important;
   }
-  /* .talk-expert {
-      text-align: center;
-  }
-
-  .talk-expert input[type=email] {
-      width: auto;
-      margin-right: 0;
-      padding: 0.7rem 2rem;
-      width: 100%;
-      max-width: 260px;
-  }
-
-  button.btn.btn-info {
-      font-size: 0.7rem;
-      padding: 0.75rem 1.5rem;
-      width: auto;
-  } */
 
   .testimonialbox .topbox p {
       font-size: 0.875rem;
@@ -902,7 +892,7 @@ body {
 
   .testimonialbox .topbox img {
       max-width: auto;
-  }
+    }
 
   .testimonialbox svg {
       width: 48px !important;
@@ -915,6 +905,24 @@ body {
       height: 92px;
       top: -3rem;
   }
+
+  form {
+    padding: 1rem 1rem;
+  }
+
+  .processbox {
+    padding: 0rem 0rem;
+    position: relative;
+    margin-top: 1rem;
+  }
+
+  .processbox h4 {
+    width: 48px;
+    height: 48px;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
