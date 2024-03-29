@@ -678,6 +678,9 @@ body {
     border-radius: 1.4rem;
     text-align: center;
   }
+  .sticky-top {
+    position: relative;
+  }
 }
 
 @media only screen and (max-width: 600px) {
