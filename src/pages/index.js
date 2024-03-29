@@ -35,7 +35,6 @@ export default function Home() {
         <meta name='generator' content='Hugo 0.84.0' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.png' />
-        <script src="/node_modules/locomotive-scroll//dist/locomotive-scroll.min.js"></script>
         {/* <script
           async
           src='https://www.googletagmanager.com/gtag/js?id=G-K59Z9TWS6F'
