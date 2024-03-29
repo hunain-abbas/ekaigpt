@@ -108,24 +108,44 @@ p, li, a {
 .featurebox.d-flex .contentbox {
   padding-left: 2rem;
 } */
-section.herosec {
-  overflow: hidden;
+
+section,
+footer  {
+  position: relative;
+  z-index: 99999;
+  background: #ffffff;
+}
+
+header {
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 999999;
 }
 
 section.herosec {
+  overflow: hidden;
+  padding-top: 16rem;
+}
+
+section.herosec .background {
   background-image: url('assets/images/herobg.png');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
-  /* padding-top: 14rem;
+  /* padding-top: 14rem; */
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background-size: cover;
-  z-index: 0; */
+  height: 100vh;
+  z-index: 0;
 }
+
 section.herosec .container {
   position: relative;
 }
@@ -135,9 +155,14 @@ section.herosec p {
   color: #050403B2;
 
 }
+section#howtostarted {
+  padding-bottom: 14rem;
+  height: 120vh;
+}
 
 a.btnsolid {
-  padding: 1rem 1.5rem;
+  font-size: 1.375rem;
+  padding: 0.8rem 1.5rem;
   display: inline-block;
   background: #FDB918;
   border: 1px solid #FDB918;
@@ -259,6 +284,7 @@ ul.tagCloud {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin-bottom: 6rem !important;
 }
 
@@ -285,8 +311,7 @@ section .nav-pills.flex-column .nav-item .nav-link.active {
   background: #FDB918;
 }
 #integrateekai img {
-  max-width: 466px;
-  margin-top: 6.25rem;
+  max-width: 366px;
 }
 #integrateekai .bg-yellow {
   padding: 6.25rem 0rem;
@@ -310,19 +335,9 @@ section .nav-pills.flex-column .nav-item .nav-link.active {
 .processbox h4,
 .processbox h5,
 .processbox p {
-  color: #AD7E07;
+  color: #ffffff;
 }
 
-.processbox:hover h4,
-.processbox:hover h5,
-.processbox:hover p {
-    color: #ffffff;
-}
-
-.processbox:hover h4 {
-    background: #ffffff;
-    color: #fdb918;
-}
 .processbox h5 {
   font-size: 1.325rem;
 }
@@ -333,18 +348,19 @@ section .nav-pills.flex-column .nav-item .nav-link.active {
 }
 
 .processbox h4 {
-  width: 77px;
-  height: 77px;
+  width: 70px;
+  height: 70px;
   display: inline-block;
   margin: auto;
-  background: #FFD266;
-  color: #ffffff;
+  background: #ffffff;
+  color: #FFD266;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 3rem;
   position: relative;
+  font-size: 2.25rem;
 }
 
 .processbox.center:before {
@@ -424,6 +440,10 @@ footer#footer {
   font-size: 1.5rem;
   margin: 1rem 0;
   color: #000000;
+}
+.testimonialbox .bottombox {
+  width: 80%;
+  margin: auto;
 }
 .testimonialbox .bottombox p {
   font-size: 1.125rem;
@@ -506,30 +526,51 @@ button.btn {
 form {
   padding: 2rem 3rem;
   border-radius: 0.75rem;
-  background: #ffffff;
+  text-align: left;
+  /* background: #ffffff; */
 }
 
 form input,
 form textarea {
-  background: #FDB91838 !important;
-  border-radius: 0.75rem !important;
+  background: #ffffff !important;
+  border-radius: 0.3rem !important;
   padding: 0.6rem 1rem !important;
-  border: 1px solid #FDB91838 !important;
+  border: 1px solid #ffffff !important;
 }
 
 form label {
-  margin-bottom: 0 !important;
+  font-size: 1.125rem;
+  text-align: left;
+  display: block;
+  margin-bottom: 4px !important;
 }
 form button {
-  padding: 0.7rem 1.5rem;
-  display: block;
-  background: #FDB918;
+  font-weight: 500;
+  padding: 0.8rem 1.5rem;
+  display: inline-block;
+  width: auto !important;
+  min-width: 220px;
+  font-size: 1.375rem;
+  background: #ffffff;
   border: 1px solid #FDB918;
-  color: #ffffff;
+  color: #FDB918;
   text-decoration: none;
   border-radius: 4rem;
-  margin: auto;
+  margin: 1.25rem auto !important;
   transition: 0.2s ease-in-out;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #BBBCCA;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #BBBCCA;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #BBBCCA;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #BBBCCA;
 }
 
 form button:hover {
@@ -635,6 +676,10 @@ body {
   .testimonialbox .bottombox p {
     min-height: 120px;
   }
+  .testimonialbox .bottombox {
+    width: 80%;
+    margin: auto;
+}
 
   .testimonialbgbox {
       height: 92px;

@@ -69,37 +69,39 @@ const ContactForm = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <div className="mb-3">
-        <label htmlFor="name" className="form-label">Name*</label>
-        <input type="text" className={`form-control ${errors.name && 'is-invalid'}`} id="name" name="name" value={formData.name} onChange={handleChange} />
-        {errors.name && <div className="invalid-feedback">Name is required</div>}
+      <div className="row">
+        <div className="col-md-6 mb-3">
+          <label htmlFor="name" className="form-label">Name*</label>
+          <input type="text" placeholder="Full Name" className={`form-control ${errors.name && 'is-invalid'}`} id="name" name="name" value={formData.name} onChange={handleChange} />
+          {errors.name && <div className="invalid-feedback">Name is required</div>}
+        </div>
+        <div className="col-md-6 mb-3">
+          <label htmlFor="organization" className="form-label">Company Name*</label>
+          <input type="text" placeholder="Where do you work?" className={`form-control ${errors.organization && 'is-invalid'}`} id="organization" name="organization" value={formData.organization} onChange={handleChange} />
+          {errors.organization && <div className="invalid-feedback">Organization is required</div>}
+        </div>
+        <div className="col-md-6 mb-3">
+          <label htmlFor="email" className="form-label">Work Emails*</label>
+          <input type="email" placeholder="Email Address" className={`form-control ${errors.email && 'is-invalid'}`} id="email" name="email" value={formData.email} onChange={handleChange} />
+          {errors.email && <div className="invalid-feedback">Email is required</div>}
+        </div>
+        <div className="col-md-6 mb-3">
+          <label htmlFor="designation" className="form-label">Designation*</label>
+          <input type="text" placeholder="Text" className={`form-control ${errors.designation && 'is-invalid'}`} id="designation" name="designation" value={formData.designation} onChange={handleChange} />
+          {errors.designation && <div className="invalid-feedback">Designation is required</div>}
+        </div>
+        <div className="col-md-6 mb-3">
+          <label htmlFor="phone" className="form-label">Phone Number*</label>
+          <input type="tel" placeholder="+1 XXX XXXX XXXX" className={`form-control ${errors.phone && 'is-invalid'}`} id="phone" name="phone" value={formData.phone} onChange={handleChange} />
+          {errors.phone && <div className="invalid-feedback">Phone Number is required</div>}
+        </div>
+        <div className="col-md-6 mb-3">
+          <label htmlFor="discussion" className="form-label">What would you like to discuss?</label>
+          <input type="text" placeholder="Text" className={`form-control ${errors.discussion && 'is-invalid'}`} id="discussion" name="discussion" rows="3" value={formData.discussion} onChange={handleChange} />
+          {errors.discussion && <div className="invalid-feedback">Please provide a topic for discussion</div>}
+        </div>
+        <button type="submit" className="">Get Started Now</button>
       </div>
-      <div className="mb-3">
-        <label htmlFor="email" className="form-label">Email*</label>
-        <input type="email" className={`form-control ${errors.email && 'is-invalid'}`} id="email" name="email" value={formData.email} onChange={handleChange} />
-        {errors.email && <div className="invalid-feedback">Email is required</div>}
-      </div>
-      <div className="mb-3">
-        <label htmlFor="organization" className="form-label">Organization*</label>
-        <input type="text" className={`form-control ${errors.organization && 'is-invalid'}`} id="organization" name="organization" value={formData.organization} onChange={handleChange} />
-        {errors.organization && <div className="invalid-feedback">Organization is required</div>}
-      </div>
-      <div className="mb-3">
-        <label htmlFor="phone" className="form-label">Phone Number*</label>
-        <input type="tel" className={`form-control ${errors.phone && 'is-invalid'}`} id="phone" name="phone" value={formData.phone} onChange={handleChange} />
-        {errors.phone && <div className="invalid-feedback">Phone Number is required</div>}
-      </div>
-      <div className="mb-3">
-        <label htmlFor="designation" className="form-label">Designation*</label>
-        <input type="text" className={`form-control ${errors.designation && 'is-invalid'}`} id="designation" name="designation" value={formData.designation} onChange={handleChange} />
-        {errors.designation && <div className="invalid-feedback">Designation is required</div>}
-      </div>
-      <div className="mb-3">
-        <label htmlFor="discussion" className="form-label">What would you like to discuss?</label>
-        <textarea className={`form-control ${errors.discussion && 'is-invalid'}`} id="discussion" name="discussion" rows="3" value={formData.discussion} onChange={handleChange} />
-        {errors.discussion && <div className="invalid-feedback">Please provide a topic for discussion</div>}
-      </div>
-      <button type="submit" className="">Book a Consultation</button>
     </form>
   );
 };
