@@ -65,11 +65,6 @@ export default function Home() {
             `,
           }}
         /> */}
-        <script
-          href='/assets/dist/js/script.js'
-          rel='script.js'
-          type='text/javascript' async>
-        </script>
       </Head>
       <body className=''>
       <main data-scroll-container>
