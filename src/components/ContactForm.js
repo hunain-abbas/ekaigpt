@@ -87,7 +87,7 @@ const ContactForm = () => {
         </div>
         <div className="col-md-6 mb-3">
           <label htmlFor="designation" className="form-label">Designation*</label>
-          <input type="text" placeholder="Text" className={`form-control ${errors.designation && 'is-invalid'}`} id="designation" name="designation" value={formData.designation} onChange={handleChange} />
+          <input type="text" placeholder="Your role" className={`form-control ${errors.designation && 'is-invalid'}`} id="designation" name="designation" value={formData.designation} onChange={handleChange} />
           {errors.designation && <div className="invalid-feedback">Designation is required</div>}
         </div>
         <div className="col-md-6 mb-3">
@@ -97,7 +97,7 @@ const ContactForm = () => {
         </div>
         <div className="col-md-6 mb-3">
           <label htmlFor="discussion" className="form-label">What would you like to discuss?</label>
-          <input type="text" placeholder="Text" className={`form-control ${errors.discussion && 'is-invalid'}`} id="discussion" name="discussion" rows="3" value={formData.discussion} onChange={handleChange} />
+          <input type="text" placeholder="" className={`form-control ${errors.discussion && 'is-invalid'}`} id="discussion" name="discussion" rows="3" value={formData.discussion} onChange={handleChange} />
           {errors.discussion && <div className="invalid-feedback">Please provide a topic for discussion</div>}
         </div>
         <button type="submit" className="">Get Started Now</button>

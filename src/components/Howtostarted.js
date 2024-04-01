@@ -128,7 +128,7 @@ import { Waypoint } from 'react-waypoint';
                 <button className='nav-link text-primary fw-semibold position-relative' id='pills-home-tab' data-bs-toggle='pill' data-bs-target='#howtostarted4' type='button' role='tab' aria-controls='pills-home' aria-selected='true'>Add Team Members</button>
               </li>
               <li className='nav-item' role='presentation'>
-                <button className='nav-link text-primary fw-semibold position-relative' id='pills-profile-tab' data-bs-toggle='pill' data-bs-target='#howtostarted5' type='button' role='tab' aria-controls='pills-profile' aria-selected='false'>Chat with your data</button>
+                <button className='nav-link text-primary fw-semibold position-relative' id='pills-profile-tab' data-bs-toggle='pill' data-bs-target='#howtostarted5' type='button' role='tab' aria-controls='pills-profile' aria-selected='false'>Chat with your Data</button>
               </li>
               <li className='nav-item' role='presentation'>
                 <button className='nav-link text-primary fw-semibold position-relative' id='pills-contact-tab' data-bs-toggle='pill' data-bs-target='#howtostarted6' type='button' role='tab' aria-controls='pills-contact' aria-selected='false'>Visualize & Share Insights</button>
