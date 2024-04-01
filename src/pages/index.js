@@ -19,24 +19,43 @@ SwiperCore.use([Scrollbar]);
 // const scroll = new LocomotiveScroll();
 
 export default function Home() {
-  useEffect(() => {
-    function scrollToAnchor(anchorId) {
-      const element = document.getElementById(anchorId);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    }
+//   useEffect(() => {
+//     function scrollToAnchor(anchorId) {
+//       const element = document.getElementById(anchorId);
+//       if (element) {
+//         element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+//       }
+//     }
   
-    // Add event listeners to anchor links to call scrollToAnchor function
-    document.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', function(e) {
-        e.preventDefault(); // Prevent default anchor behavior
-        const anchorId = this.getAttribute('href').substring(1); // Remove leading '#'
-        scrollToAnchor(anchorId);
-      });
-    });
-}, []);
+//     // Add event listeners to anchor links to call scrollToAnchor function
+//     document.querySelectorAll('a').forEach(link => {
+//       link.addEventListener('click', function(e) {
+//         e.preventDefault(); // Prevent default anchor behavior
+//         const anchorId = this.getAttribute('href').substring(1); // Remove leading '#'
+//         scrollToAnchor(anchorId);
+//       });
+//     });
+// }, []);
+useEffect(() => {
+  function scrollToAnchor(anchorId) {
+    const element = document.getElementById(anchorId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
 
+  // Add event listeners to anchor links to call scrollToAnchor function
+  document.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', function(e) {
+      const href = this.getAttribute('href');
+      if (href && href.startsWith('#')) {
+        e.preventDefault(); // Prevent default anchor behavior
+        const anchorId = href.substring(1); // Remove leading '#'
+        scrollToAnchor(anchorId);
+      }
+    });
+  });
+}, []);
 
   return (
     <>
@@ -360,7 +379,7 @@ export default function Home() {
                   <nav className='nav'>
                     <a className='nav-link active' aria-current='page' href='#herosection'>Overview</a>
                     <a className='nav-link' href='#herosection'>How Ekai Works</a>
-                    <a className='nav-link' href='#'>Privacy Policy</a>
+                    <a className='nav-link' href='/terms-and-conditions'>Privacy Policy</a>
                     <a className='nav-link' href='#features'>Features</a>
                     <a className='nav-link' href='#integrateekai'>Integrations</a>
                     <a className='nav-link' href='#testimonial'>Use Cases</a>
