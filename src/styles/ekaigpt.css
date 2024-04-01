@@ -797,9 +797,11 @@ body {
   }
 
   .video-container {
-      padding-top: 4rem;
+    margin-top: 4rem;
   }
-
+  .video-container video {
+    border-radius: 1rem;
+}
   .featurebox {
       padding: 2rem 2rem;
       border-radius: 1.4rem;
@@ -960,7 +962,24 @@ body {
   }
 
   form {
-    padding: 1rem 1rem;
+    padding: 1rem 5rem;
+  }
+
+  button.muteicon {
+    width: 40px;
+    height: 40px;
+    top: 1rem;
+    right: 2rem;
+  }
+  button.muteicon svg {
+      width: 24px;
+  }
+  .video-container video {
+      border-radius: 1rem;
+  }
+
+  a.btnsolid {
+    padding: 0.6rrm 1.2rem;
   }
 
   .processbox {
@@ -974,6 +993,19 @@ body {
     height: 48px;
     font-size: 2rem;
     margin-bottom: 1rem;
+  }
+  section.py-lg-section.herosec-termscond {
+    padding-top: 4rem;
+    padding-bottom: 0rem;
+  }
+  section.herosec-termscond .container:nth-child(2) {
+    padding-top: 2rem;
+  }
+  section.herosec-termscond h4 {
+    font-size: 1.2rem;
+  }
+  section.herosec-termscond p {
+    font-size: 1rem;
   }
 
 }

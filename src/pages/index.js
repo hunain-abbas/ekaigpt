@@ -379,7 +379,7 @@ useEffect(() => {
                   <nav className='nav'>
                     <a className='nav-link active' aria-current='page' href='#herosection'>Overview</a>
                     <a className='nav-link' href='#herosection'>How Ekai Works</a>
-                    <a className='nav-link' href='/terms-and-conditions'>Terms & Conditions</a>
+                    <a className='nav-link' href=''>Terms & Conditions</a>
                     <a className='nav-link' href='#features'>Features</a>
                     <a className='nav-link' href='#integrateekai'>Integrations</a>
                     <a className='nav-link' href='#testimonial'>Use Cases</a>
