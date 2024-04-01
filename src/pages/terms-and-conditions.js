@@ -127,13 +127,13 @@ export default function Home() {
                 </div>
                 <div className='col-md-7'>
                   <nav className='nav'>
-                    <a className='nav-link active' aria-current='page' href='#herosection'>Overview</a>
-                    <a className='nav-link' href='https://ekaigpt.vercel.app/#herosection'>How Ekai Works</a>
-                    <a className='nav-link' href='https://ekaigpt.vercel.app/terms-and-conditions'>Terms & Conditions</a>
-                    <a className='nav-link' href='https://ekaigpt.vercel.app/#features'>Features</a>
-                    <a className='nav-link' href='https://ekaigpt.vercel.app/#integrateekai'>Integrations</a>
-                    <a className='nav-link' href='https://ekaigpt.vercel.app/#testimonial'>Use Cases</a>
-                    <a className='nav-link' href='https://ekaigpt.vercel.app/#faqs'>FAQs</a>
+                    <Link className='nav-link active' aria-current='page' href='#herosection'>Overview</Link>
+                    <Link className='nav-link' href='https://ekaigpt.vercel.app/#herosection'>How Ekai Works</Link>
+                    <Link className='nav-link' href='https://ekaigpt.vercel.app/terms-and-conditions'>Terms & Conditions</Link>
+                    <Link className='nav-link' href='https://ekaigpt.vercel.app/#features'>Features</Link>
+                    <Link className='nav-link' href='https://ekaigpt.vercel.app/#integrateekai'>Integrations</Link>
+                    <Link className='nav-link' href='https://ekaigpt.vercel.app/#testimonial'>Use Cases</Link>
+                    <Link className='nav-link' href='https://ekaigpt.vercel.app/#faqs'>FAQs</Link>
                   </nav> 
                 </div>
               </div>

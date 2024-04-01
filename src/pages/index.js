@@ -377,13 +377,13 @@ useEffect(() => {
                 </div>
                 <div className='col-md-7'>
                   <nav className='nav'>
-                    <a className='nav-link active' aria-current='page' href='#herosection'>Overview</a>
-                    <a className='nav-link' href='#herosection'>How Ekai Works</a>
-                    <a className='nav-link' href='/terms-and-conditions'>Terms & Conditions</a>
-                    <a className='nav-link' href='#features'>Features</a>
-                    <a className='nav-link' href='#integrateekai'>Integrations</a>
-                    <a className='nav-link' href='#testimonial'>Use Cases</a>
-                    <a className='nav-link' href='#faqs'>FAQs</a>
+                    <Link className='nav-link active' aria-current='page' href='#herosection'>Overview</Link>
+                    <Link className='nav-link' href='#herosection'>How Ekai Works</Link>
+                    <Link className='nav-link' href='/terms-and-conditions'>Terms & Conditions</Link>
+                    <Link className='nav-link' href='#features'>Features</Link>
+                    <Link className='nav-link' href='#integrateekai'>Integrations</Link>
+                    <Link className='nav-link' href='#testimonial'>Use Cases</Link>
+                    <Link className='nav-link' href='#faqs'>FAQs</Link>
                   </nav> 
                 </div>
               </div>
