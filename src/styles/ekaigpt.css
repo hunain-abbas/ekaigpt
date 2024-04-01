@@ -154,10 +154,10 @@ section.herosec p {
   color: #050403B2;
 
 }
-section#howtostarted {
+/* section#howtostarted {
   padding-bottom: 14rem;
   height: 120vh;
-}
+} */
 
 a.btnsolid {
   font-size: 1.375rem;
@@ -220,6 +220,7 @@ a.btnsolid.whiteco:hover {
   margin: 1rem 0rem;
 }
 button.accordion-button {
+  font-weight: 500;
   font-size: 1.6rem;
   padding: 3rem 1rem !important;
   background: transparent;
@@ -455,8 +456,25 @@ footer#footer {
   color: #000000;
 }
 .video-container {
-  padding-top: 9rem;
+  margin-top: 9rem;
+  position: relative;
 }
+.video-container video {
+  box-shadow: 7px 10px 26px 0px #00000029;
+  border-radius: 2rem;
+}
+button.muteicon {
+  background: #ffffff;
+  border: 0;
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+  z-index: 999;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+
 img {
   width: 100%;
 }
@@ -539,7 +557,7 @@ form input,
 form textarea {
   background: #ffffff !important;
   border-radius: 0.3rem !important;
-  padding: 0.6rem 1rem !important;
+  padding: 0.9rem 1rem !important;
   border: 1px solid #ffffff !important;
 }
 
@@ -563,6 +581,32 @@ form button {
   border-radius: 4rem;
   margin: 1.25rem auto !important;
   transition: 0.2s ease-in-out;
+}
+
+section.py-lg-section.herosec-termscond {
+  padding-top: 16rem;
+  padding-bottom: 3rem;
+}
+section.herosec-termscond {
+  background-image: url('assets/images/herobg.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+section.herosec-termscond h4 {
+  font-size: 1.625rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+section.herosec-termscond p {
+  font-size: 1.25rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+section.herosec-termscond .container:nth-child(2) {
+  padding-top: 6rem;
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */

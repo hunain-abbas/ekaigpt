@@ -23,6 +23,7 @@
     "react-calendly": "^4.3.0",
     "react-dom": "18.2.0",
     "react-locomotive-scroll": "^0.2.2",
+    "react-waypoint": "^10.3.0",
     "sharp": "^0.33.2",
     "swiper": "^6.8.4"
   }

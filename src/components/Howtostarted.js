@@ -1,78 +1,79 @@
 // components/ContactForm.js
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import { Waypoint } from 'react-waypoint';
 
-function Howtostarted() {
-  useEffect(() => {
-  const section = document.getElementById('howtostarted');
-  const tabs = document.querySelectorAll('#pills-tab .nav-link');
-  const lastTabIndex = tabs.length - 1;
-  let currentTab = 0;
-  let lastScrollTop = 0;
+// function Howtostarted() {
+  const Howtostarted = () => {
 
-  function changeTab(direction) {
-      if (direction === 'up' && currentTab > 0) {
-          currentTab--;
-      } else if (direction === 'down' && currentTab < lastTabIndex) {
-          currentTab++;
-      }
-      tabs[currentTab].click();
-  }
+  // useEffect(() => {
+  // const section = document.getElementById('howtostarted');
+  // const tabs = document.querySelectorAll('#pills-tab .nav-link');
+  // const lastTabIndex = tabs.length - 1;
+  // let currentTab = 0;
+  // let lastScrollTop = 0;
 
-  function debounce(func, delay) {
-      let timer;
-      return function () {
-          const context = this;
-          const args = arguments;
-          clearTimeout(timer);
-          timer = setTimeout(() => {
-              func.apply(context, args);
-          }, delay);
-      };
-  }
+  // function changeTab(direction) {
+  //     if (direction === 'up' && currentTab > 0) {
+  //         currentTab--;
+  //     } else if (direction === 'down' && currentTab < lastTabIndex) {
+  //         currentTab++;
+  //     }
+  //     tabs[currentTab].click();
+  // }
 
-  function handleScroll() {
-      const st = window.pageYOffset || document.documentElement.scrollTop;
-      const direction = st > lastScrollTop ? 'down' : 'up';
-      lastScrollTop = st;
+  // function debounce(func, delay) {
+  //     let timer;
+  //     return function () {
+  //         const context = this;
+  //         const args = arguments;
+  //         clearTimeout(timer);
+  //         timer = setTimeout(() => {
+  //             func.apply(context, args);
+  //         }, delay);
+  //     };
+  // }
 
-      const rect = section.getBoundingClientRect();
-      const visibleHeight = window.innerHeight - (window.innerHeight * 0.65); // Adjust visibility threshold as needed
-      const isVisible = rect.top <= visibleHeight && rect.bottom >= 0;
+  // function handleScroll() {
+  //     const st = window.pageYOffset || document.documentElement.scrollTop;
+  //     const direction = st > lastScrollTop ? 'down' : 'up';
+  //     lastScrollTop = st;
 
-      if (isVisible && direction === 'down' && currentTab === lastTabIndex) {
-          // Smooth scroll to the next section
-          const nextSection = section.nextElementSibling;
-          if (nextSection) {
-              nextSection.scrollIntoView({ behavior: 'smooth' });
-          }
-      } else if (isVisible && direction === 'up' && currentTab === 0) {
-          // Smooth scroll to the previous section
-          const prevSection = section.previousElementSibling;
-          if (prevSection) {
-              prevSection.scrollIntoView({ behavior: 'smooth' });
-          }
-      } else if (isVisible && direction === 'down' && currentTab < lastTabIndex) {
-          changeTab('down');
-      } else if (isVisible && direction === 'up' && currentTab > 0) {
-          changeTab('up');
-      }
+  //     const rect = section.getBoundingClientRect();
+  //     const visibleHeight = window.innerHeight - (window.innerHeight * 0.65); // Adjust visibility threshold as needed
+  //     const isVisible = rect.top <= visibleHeight && rect.bottom >= 0;
 
-      if (currentTab === lastTabIndex) {
-          // section.classList.remove('sticky-top');
-          // Replace 'sticky' with your CSS class for sticking the section
-      } else {
-          section.classList.add('sticky-top');
-      }
-  }
+  //     if (isVisible && direction === 'down' && currentTab === lastTabIndex) {
+  //         // Smooth scroll to the next section
+  //         const nextSection = section.nextElementSibling;
+  //         if (nextSection) {
+  //             nextSection.scrollIntoView({ behavior: 'smooth' });
+  //         }
+  //     } else if (isVisible && direction === 'up' && currentTab === 0) {
+  //         // Smooth scroll to the previous section
+  //         const prevSection = section.previousElementSibling;
+  //         if (prevSection) {
+  //             prevSection.scrollIntoView({ behavior: 'smooth' });
+  //         }
+  //     } else if (isVisible && direction === 'down' && currentTab < lastTabIndex) {
+  //         changeTab('down');
+  //     } else if (isVisible && direction === 'up' && currentTab > 0) {
+  //         changeTab('up');
+  //     }
 
-  const debouncedScroll = debounce(handleScroll, 200); // Adjust the debounce time as needed
-  window.addEventListener('scroll', debouncedScroll);
+  //     if (currentTab === lastTabIndex) {
+  //         // section.classList.remove('sticky-top');
+  //         // Replace 'sticky' with your CSS class for sticking the section
+  //     } else {
+  //         section.classList.add('sticky-top');
+  //     }
+  // }
 
-
-    }, []);
-
+  // const debouncedScroll = debounce(handleScroll, 200); // Adjust the debounce time as needed
+  // window.addEventListener('scroll', debouncedScroll);
+  //   }, []);
   return (
-    <section id='howtostarted' className='py-lg-section'>
+    
+    <section id='howtostarted' className='py-lg-section' >
     <div className='container'>
       <div className='row'>
         <div className='col-md-12'>

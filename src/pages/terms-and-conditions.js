@@ -41,7 +41,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>ekai works for everyone</title>
+        <title>ekai Terms & Conditions</title>
         <meta charset='utf-8'/>
         <meta name='viewport' content='width=device-width, initial-scale=1'/>
         <meta name='description' content=''/>
@@ -49,36 +49,6 @@ export default function Home() {
         <meta name='generator' content='Hugo 0.84.0' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.png' />
-        {/* <script
-          async
-          src='https://www.googletagmanager.com/gtag/js?id=G-K59Z9TWS6F'
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-K59Z9TWS6F');
-            `,
-          }}
-        />
-       <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function(w,d,s,l,i){
-                w[l]=w[l]||[];
-                w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
-                var f=d.getElementsByTagName(s)[0],
-                j=d.createElement(s),
-                dl=l!='dataLayer'?'&l='+l:'';
-                j.async=true;
-                j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
-                f.parentNode.insertBefore(j,f);
-              })(window,document,'script','dataLayer','GTM-NMDDD6CN');
-            `,
-          }}
-        /> */}
       </Head>
       <body className=''>
       <main>
@@ -95,253 +65,52 @@ export default function Home() {
             </div>
           </div>
         </header>
-        <Herosection />
-        <section id='features' className='py-lg-section'>
+        <section className='py-lg-section herosec-termscond'>
           <div className='container'>
             <div className='row'>
-            <h2 className='w-100 text-center mb-3 mb-md-5 mx-auto'>Automating business analytics for enterprise data</h2>
-              <ul className='tagCloud mb-5'>
-                <li>
-                  Instant Analytics
-                </li>
-                <li>
-                  Faster Value Creation
-                </li>
-                <li>
-                  Easy Visualization
-                </li>
-                <li>
-                  Data Privacy
-                </li>
-                <li>
-                  Accessible Insights
-                </li>
-              </ul>
-              <div className='col-md-4'>
-                <div className='iconbox text-center'>
-                    <div className='wrimagecard-topimage_header'>
-                        <svg width='86' height='58' viewBox='0 0 86 58' fill='none' xmlns='http://www.w3.org/2000/svg'>
-                          <path d='M23.6306 43.6941V47.7011C23.6009 48.5233 23.8762 49.3276 24.4036 49.9591C29.2516 55.6431 35.7736 57.0501 42.8736 57.0501C49.9736 57.0501 56.4956 55.6431 61.3436 49.9591C61.871 49.3276 62.1463 48.5233 62.1166 47.7011V43.6941C62.1675 39.8688 60.8859 36.1449 58.4916 33.1611C57.4835 31.868 56.2009 30.8148 54.7363 30.0776C53.2717 29.3404 51.6618 28.9375 50.0226 28.8981H35.7226C34.0833 28.9369 32.4731 29.3396 31.0085 30.0768C29.5438 30.8141 28.2613 31.8675 27.2536 33.1611C24.8592 36.1449 23.5776 39.8688 23.6286 43.6941H23.6306ZM50.6306 3.58809C49.0971 2.05463 47.1433 1.01034 45.0163 0.587266C42.8893 0.164196 40.6846 0.381351 38.6811 1.21127C36.6775 2.04119 34.965 3.4466 33.7602 5.24979C32.5553 7.05297 31.9122 9.17293 31.9122 11.3416C31.9122 13.5103 32.5553 15.6302 33.7602 17.4334C34.965 19.2366 36.6775 20.642 38.6811 21.4719C40.6846 22.3018 42.8893 22.519 45.0163 22.0959C47.1433 21.6729 49.0971 20.6286 50.6306 19.0951C51.6489 18.077 52.4567 16.8682 53.0079 15.5378C53.559 14.2075 53.8427 12.7816 53.8427 11.3416C53.8427 9.9016 53.559 8.4757 53.0079 7.14534C52.4567 5.81498 51.6489 4.60622 50.6306 3.58809ZM64.3106 49.2771C65.7256 49.441 67.1491 49.5198 68.5736 49.5131C74.7656 49.5131 80.4646 48.2951 84.6946 43.3361C85.1359 42.8076 85.365 42.134 85.3376 41.4461V37.9181C85.3376 30.8511 80.6196 25.0651 74.8576 25.0651H62.2906C61.0644 25.0846 59.8541 25.3462 58.7294 25.835C57.6046 26.3238 56.5875 27.03 55.7366 27.9131C61.2856 30.7601 64.4996 37.1791 64.4996 43.6951V47.7021C64.5022 48.2335 64.4373 48.763 64.3066 49.2781L64.3106 49.2771ZM74.5926 5.99109C73.4019 4.80044 71.8848 3.98962 70.2333 3.66115C68.5817 3.33267 66.8699 3.50131 65.3142 4.14573C63.7585 4.79015 62.4288 5.88142 61.4933 7.28152C60.5578 8.68163 60.0585 10.3277 60.0585 12.0116C60.0585 13.6955 60.5578 15.3416 61.4933 16.7417C62.4288 18.1418 63.7585 19.233 65.3142 19.8775C66.8699 20.5219 68.5817 20.6905 70.2333 20.362C71.8848 20.0336 73.4019 19.2227 74.5926 18.0321C76.1874 16.4344 77.0832 14.2691 77.0832 12.0116C77.0832 9.75409 76.1874 7.58883 74.5926 5.99109ZM23.1926 5.99109C22.0019 4.80078 20.485 3.99025 18.8338 3.66198C17.1825 3.33371 15.4709 3.50245 13.9155 4.14685C12.3601 4.79125 11.0307 5.88239 10.0954 7.28229C9.1601 8.68219 8.66089 10.328 8.66089 12.0116C8.66089 13.6952 9.1601 15.341 10.0954 16.7409C11.0307 18.1408 12.3601 19.2319 13.9155 19.8763C15.4709 20.5207 17.1825 20.6895 18.8338 20.3612C20.485 20.0329 22.0019 19.2224 23.1926 18.0321C24.7889 16.4351 25.6856 14.2696 25.6856 12.0116C25.6856 9.75361 24.7889 7.58805 23.1926 5.99109ZM21.2446 47.7011V43.6941C21.2446 37.1781 24.4636 30.7591 30.0086 27.9121C29.1583 27.0293 28.1419 26.3234 27.0178 25.8348C25.8937 25.3462 24.6841 25.0846 23.4586 25.0651H10.8936C9.47427 25.1001 8.08039 25.4495 6.81237 26.0881C5.54434 26.7267 4.43374 27.6386 3.56059 28.7581C1.48232 31.3548 0.369993 34.5924 0.413587 37.9181V41.4421C0.386131 42.13 0.615296 42.8036 1.05659 43.3321C5.28659 48.2911 10.9806 49.5131 17.1736 49.5131C18.5996 49.5211 20.0248 49.4437 21.4416 49.2811C21.308 48.7664 21.2408 48.2368 21.2416 47.7051L21.2446 47.7011Z' fill='#FDB918'/>
-                        </svg>
-                    </div>
-                    <div className='wrimagecard-topimage_title' >
-                      <h4>Empowers teams</h4>
-                      <p>ekai enables everyone on your team to analyze data and make informed decisions.</p>
-                    </div>
-                </div>
-              </div>
-              <div className='col-md-4'>
-                <div className='iconbox text-center'>
-                  <div className='wrimagecard-topimage_header'>
-                    <svg width='51' height='59' viewBox='0 0 51 59' fill='none' xmlns='http://www.w3.org/2000/svg'>
-                      <path d='M49.9526 17.4526C47.992 13.1582 44.6777 9.61489 40.5326 7.11028L44.2583 3.38457C44.9447 2.6982 44.9447 1.58628 44.2583 0.89991C43.5719 0.213539 42.46 0.213539 41.7737 0.89991L37.2503 5.42331C33.6704 3.87662 29.6549 3.0208 25.4449 3.0208C14.5599 3.0208 4.93954 8.68593 0.937142 17.4526C0.2808 18.8897 0.2808 20.537 0.937142 21.9741C2.8978 26.2685 6.21212 29.8118 10.3572 32.3164L6.63145 36.0421C5.94508 36.7285 5.94508 37.8404 6.63145 38.5268C6.97464 38.87 7.42421 39.0416 7.87378 39.0416C8.32335 39.0416 8.77293 38.87 9.11611 38.5268L13.6395 34.0034C17.2194 35.5501 21.2349 36.4059 25.4449 36.4059C36.3299 36.4059 45.9502 30.7408 49.9526 21.9741C50.609 20.537 50.609 18.8897 49.9526 17.4526ZM16.6593 19.7133C16.6593 14.8693 20.6008 10.9278 25.4449 10.9278C27.2325 10.9278 28.893 11.4708 30.2821 12.3915L27.7034 14.9702C27.0161 14.6414 26.2562 14.442 25.4449 14.442C22.5381 14.442 20.1736 16.8066 20.1736 19.7133C20.1736 20.5247 20.3729 21.2846 20.7017 21.9718L18.123 24.5505C17.2023 23.1615 16.6593 21.5009 16.6593 19.7133ZM25.4449 28.4989C23.6573 28.4989 21.9967 27.9559 20.6077 27.0352L23.1864 24.4565C23.8736 24.7853 24.6336 24.9847 25.4449 24.9847C28.3517 24.9847 30.7162 22.6201 30.7162 19.7133C30.7162 18.902 30.5168 18.1421 30.188 17.4549L32.7668 14.8761C33.6875 16.2652 34.2304 17.9258 34.2304 19.7133C34.2304 24.5574 30.2889 28.4989 25.4449 28.4989Z' fill='#FDB918'/>
-                    </svg>
-                  </div>
-                  <div className='wrimagecard-topimage_title'>
-                    <h4>Hides data complexity</h4>
-                    <p>Translates complex data into actionable insights accessible to team members at every level.</p>
-                  </div>
-                </div>
-                        </div>
-              <div className='col-md-4'>
-                <div className='iconbox text-center'>
-                  <div className='wrimagecard-topimage_header'>
-                    <svg width='51' height='59' viewBox='0 0 51 59' fill='none' xmlns='http://www.w3.org/2000/svg'>
-                      <path d='M27.7261 29.083C27.7261 27.868 26.754 26.8959 25.539 26.8959C24.3239 26.8959 23.3518 27.868 23.3518 29.083C23.3518 29.9336 23.8379 30.6626 24.5669 31.0271L24.0201 33.275C23.8986 33.7003 24.2024 34.0648 24.6277 34.0648H26.511C26.9363 34.0648 27.2401 33.7003 27.1185 33.275L26.5718 31.0271C27.2401 30.6626 27.7261 29.9336 27.7261 29.083Z' fill='#FDB918'/>
-                      <path d='M25.539 16.021C23.5949 16.021 21.9545 17.6006 21.9545 19.6055V23.1292H29.1234V19.6055C29.1234 17.6614 27.4831 16.021 25.539 16.021Z' fill='#FDB918'/>
-                      <path d='M49.5365 6.11825L25.8427 0.893465C25.6605 0.832712 25.4782 0.832712 25.2959 0.893465L1.60214 6.11825C0.99461 6.23976 0.569336 6.78654 0.569336 7.39407V20.5168C0.569336 33.0927 6.52316 44.8789 16.669 52.2908L24.8099 58.3054C25.2959 58.6699 25.9035 58.6699 26.3895 58.3054L34.5305 52.2908C44.6155 44.8789 50.5693 33.032 50.5693 20.5168V7.39407C50.5693 6.78654 50.1441 6.23976 49.5365 6.11825ZM35.7455 36.5557C35.7455 37.224 35.1987 37.8315 34.4697 37.8315H16.6082C15.9399 37.8315 15.3324 37.2847 15.3324 36.5557V24.405C15.3324 23.7367 15.8792 23.1292 16.6082 23.1292H18.4308V19.6055C18.4308 15.6565 21.6507 12.4366 25.5997 12.4366C29.5487 12.4366 32.7079 15.7173 32.7079 19.6055V23.1292H34.5305C35.1987 23.1292 35.8063 23.676 35.8063 24.405V36.5557H35.7455Z' fill='#FDB918'/>
-                    </svg>
-                  </div>
-                  <div className='wrimagecard-topimage_title'>
-                    <h4>Ensures data security</h4>
-                    <p>ekai integrates into your setup, and does not share or export your data to third parties</p>
-                  </div>
-                </div>
+              <div className='text-center col-md-12 col-lg-10 mx-auto'>
+                <h2 className='mb-3 mb-lg-4 text-center mw-80'>Terms & Conditions</h2>
               </div>
             </div>
           </div>
-        </section>
-        <section id="quickinsight" class="py-lg-section">
-          <div class="container">
-            <div class="bg-yellow text-center">
-              <div class="row">
-                <div class="col-md-12">
-                  <h3 class="w-100 text-center text-white mb-3 mb-md-5 mx-auto">Gain quick insights within minutes</h3>                
-                </div>
-                <div className='col-md-4'>
-                  <div class='processbox'>
-                    <h4>1</h4>
-                    <h5>Integrate seamlessly</h5>
-                    <p>ekai fits into your existing setup and understands your unique data model to ensure relevant insights</p>
-                  </div>
-                </div>
-                <div className='col-md-4'>
-                  <div class='processbox center'>
-                    <h4>2</h4>
-                    <h5>Chat with ease</h5>
-                    <p>It’s like chatting with a colleague! ekai understands natural language, making analytics a breeze.</p>
-                  </div>
-                </div>
-                <div className='col-md-4'>
-                  <div class='processbox'>
-                    <h4>3</h4>
-                    <h5>Always improving</h5>
-                    <p>ekai learns from your feedback and customises its responses to align with your business needs.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <Testimonial />
-        <Howtostarted />
-        <section id='integrateekai' className='py-lg-section'>
           <div className='container'>
             <div className='row'>
-              <div className='bg-yellow text-center'>
-              <div className='col-md-12'>
-              <h2 className='w-100 text-center text-white mb-3 mb-md-5 mx-auto'>Integrate ekai<br></br>with your data stack</h2>
-                <Image src='/assets/images/integrate.png' alt='image' />
-              </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section id='faqs' className='py-lg-section'>
-          <div className='container'>
-            <div className='row'>
-              <div className='col-md-12'>
-              <h2 className='w-100 text-center mb-3 mb-md-5 mx-auto'>FAQs</h2>
-                <div className='accordion' id='accordionExample'>
-                  <div className='accordion-item'>
-                    <h2 className='accordion-header' id='headingOne'>
-                      <button className='accordion-button collapsed' type='button' data-bs-toggle='collapse' data-bs-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne'>
-                      What does ekai do?
-                      </button>
-                    </h2>
-                    <div id='collapseOne' className='accordion-collapse collapse' aria-labelledby='headingOne' data-bs-parent='#accordionExample'>
-                      <div className='accordion-body'>
-                      ekai brings you insights from your enterprise data in minutes. It is an AI-native analytics tool that allows users to chat with their data, enabling them to make informed decisions effortlessly. ekai excels at drawing insights from data to support strategic business decisions, while prioritizing data privacy and security.
-                      </div>
-                    </div>
-                  </div>
-                  <div className='accordion-item'>
-                    <h2 className='accordion-header' id='headingTwo'>
-                      <button className='accordion-button collapsed' type='button' data-bs-toggle='collapse' data-bs-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo'>
-                      Who is ekai for?
-                      </button>
-                    </h2>
-                    <div id='collapseTwo' className='accordion-collapse collapse' aria-labelledby='headingTwo' data-bs-parent='#accordionExample'>
-                      <div className='accordion-body'>
-                      ekai is tailored for data teams and non-technical team members in enterprises, equipping everyone to leverage quick and easy data analytics for informed decision making.
-                      </div>
-                    </div>
-                  </div>
-                  <div className='accordion-item'>
-                    <h2 className='accordion-header' id='headingThree'>
-                      <button className='accordion-button collapsed' type='button' data-bs-toggle='collapse' data-bs-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree'>
-                      How can ekai help me or my team?
-                      </button>
-                    </h2>
-                    <div id='collapseThree' className='accordion-collapse collapse' aria-labelledby='headingThree' data-bs-parent='#accordionExample'>
-                      <div className='accordion-body'>
-                      It&apos;s pretty simple, ask questions in your own words and get AI-driven insights in natural language. ekai simplifies hidden complexities and allows you to chat with your data, giving you a clear picture through responses and visualizations.
-                      </div>
-                    </div>
-                  </div>
-                  <div className='accordion-item'>
-                    <h2 className='accordion-header' id='headingFour'>
-                      <button className='accordion-button collapsed' type='button' data-bs-toggle='collapse' data-bs-target='#collapseFour' aria-expanded='true' aria-controls='collapseFour'>
-                      How can you help make ekai&apos;s responses better?
-                      </button>
-                    </h2>
-                    <div id='collapseFour' className='accordion-collapse collapse' aria-labelledby='headingFour' data-bs-parent='#accordionExample'>
-                      <div className='accordion-body'>
-                      ekai uses Large Language Models (LLM) – a type of model trained on huge amounts of data, enabling ekai to understand and generate responses in natural language. Since the LLM has learned from so many different sources, it might sometimes make mistakes or give varying responses.
-                      <br></br>
-                      ekai can improve its responses with your feedback. While chatting with ekai, make sure to use the Thumbs Up and Thumbs Down buttons under each response based on how satisfied you are with the response.
-                      </div>
-                    </div>
-                  </div>
-                  <div className='accordion-item'>
-                    <h2 className='accordion-header' id='headingFive'>
-                      <button className='accordion-button collapsed collapsed' type='button' data-bs-toggle='collapse' data-bs-target='#collapseFive' aria-expanded='false' aria-controls='collapseFive'>
-                      Do I need data or engineering knowledge to use ekai? 
-                      </button>
-                    </h2>
-                    <div id='collapseFive' className='accordion-collapse collapse' aria-labelledby='headingFive' data-bs-parent='#accordionExample'>
-                      <div className='accordion-body'>
-                      This is the best part, you don’t need to have any data or engineering knowledge to use ekai. Users can chat with ekai using plain, natural language. ekai offers seamless data integration which you can set up yourself. Our team of experts are also available to assist with data integrations if needed.
-                      </div>
-                    </div>
-                  </div>
-                  <div className='accordion-item'>
-                    <h2 className='accordion-header' id='headingSix'>
-                      <button className='accordion-button collapsed' type='button' data-bs-toggle='collapse' data-bs-target='#collapseSix' aria-expanded='false' aria-controls='collapseSix'>
-                      Will my enterprise data remain safe with ekai? 
-                      </button>
-                    </h2>
-                    <div id='collapseSix' className='accordion-collapse collapse' aria-labelledby='headingSix' data-bs-parent='#accordionExample'>
-                      <div className='accordion-body'>
-                      ekai prioritizes keeping your data secure and in your control. Your data never leaves your environment since we don’t share it with third parties, as a result, no copies of your data are ever retained.
-                      </div>
-                    </div>
-                  </div>
-                  <div className='accordion-item'>
-                    <h2 className='accordion-header' id='headingSeven'>
-                      <button className='accordion-button collapsed' type='button' data-bs-toggle='collapse' data-bs-target='#collapseSeven' aria-expanded='true' aria-controls='collapseSeven'>
-                      What data sources does ekai support? 
-                      </button>
-                    </h2>
-                    <div id='collapseSeven' className='accordion-collapse collapse' aria-labelledby='headingSeven' data-bs-parent='#accordionExample'>
-                      <div className='accordion-body'>
-                      ekai currently supports data sources such as MySQL, ClickHouse, and Athena. However, we are continuously updating our list to include more options, and we also offer custom integrations based on your specific needs. You can always reach out to our team to discuss options tailored to your enterprise’s needs.
-                      </div>
-                    </div>
-                  </div>
-                  <div className='accordion-item'>
-                    <h2 className='accordion-header' id='headingEight'>
-                      <button className='accordion-button collapsed' type='button' data-bs-toggle='collapse' data-bs-target='#collapseEight' aria-expanded='false' aria-controls='collapseEight'>
-                      How long does it take to implement ekai? 
-                      </button>
-                    </h2>
-                    <div id='collapseEight' className='accordion-collapse collapse' aria-labelledby='headingEight' data-bs-parent='#accordionExample'>
-                      <div className='accordion-body'>
-                      The implementation time for ekai depends on the data maturity and documentation quality of your enterprise. It can be as short as less than a month for setups where data modelling and deployment is accurate. For custom integrations or handling unstructured data, the process may take longer, in which case our team will be happy to provide additional support to get you started as quickly as possible.
-                      </div>
-                    </div>
-                  </div>
-                  <div className='accordion-item'>
-                    <h2 className='accordion-header' id='headingNine'>
-                      <button className='accordion-button collapsed' type='button' data-bs-toggle='collapse' data-bs-target='#collapseNine' aria-expanded='false' aria-controls='collapseNine'>
-                      How do I link a data source?
-                      </button>
-                    </h2>
-                    <div id='collapseNine' className='accordion-collapse collapse' aria-labelledby='headingNine' data-bs-parent='#accordionExample'>
-                      <div className='accordion-body'>
-                      For publicly available databases, you can link a data source directly through ekai&apos;s user interface. For other cases, our team is here to assist you with the integration process, ensuring a smooth setup tailored to your specific needs.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <h4>Effective date: March 1, 2024</h4>
+              <p>Thank you for visiting www.ekai.ai (each, as applicable, the “Site“), which is owned and operated by Rayn Holdings Pte. Ltd., a Parent of the operating entities namely Rayn Ventures, Rayn (Private) Limited and Rayn Consulting and is referred to in these Terms of Use as “Rayn” “we,” “us,” or “our”. You should not access or use this Site until you have carefully read and agreed to these terms and conditions of use (the “Terms”).</p>
+              <p>By using this Website, you are agreeing to these Terms . If you do not agree to these Terms, then you are not allowed to use this Website and should immediately terminate such usage. You should check the Site and these Terms periodically for modifications. Rayn may modify the Site and/or the Terms from time to time without notice to you. If Rayn makes material changes to the Terms, we will post the revised Terms and the revised effective date on this Site. Such modifications shall be effective to you upon posting, unless explicitly stated by us. It is your responsibility to be aware of any such revised Terms by checking this webpage. Your continued use of this Site following changes to these Terms constitutes your agreement to the revised Terms. These Terms supersede all previous notices or statements regarding our terms and conditions of use with respect to this Site.</p>
+            
+              <h4>Use of this Site</h4>
+              <p>Rayn provides you with access to and use of the Site subject to your compliance with the Terms. By using this Site, or submitting information through this Site, you represent that you are at least 18 years of age. If you are not at least 18 years of age, you may not use this Site without the express consent of an adult. We control and operate the Site from our office in Pakistan, and all information is processed within Pakistan. Persons who choose to access and use the Site from other locations do so on their own initiative, and are responsible for compliance with their local laws, if and to the extent local laws are applicable. You agree to comply with all applicable laws, rules and regulations in connection with your use of the Site.</p>
+
+              <h4>Prohibited Uses</h4>
+              <p>The Site may be used only for lawful purposes. You are responsible for your own communications, including the upload, transmission and posting of information, and are responsible for the consequences of your posting on or through the Site. Rayn specifically prohibits any use of the Site, for: (a) impersonating another person; (b) engaging in or encouraging conduct that would constitute a criminal offense, give rise to civil liability or otherwise violate any city, state, national or international law or regulation, or which fails to comply with accepted Internet protocol; (c) scraping or crawling any portion of the Site through manual or automated means. In addition, you are prohibited from violating or attempting to violate the security of the Site or Rayn’s systems or network security, including, without limitation, the following: (i) accessing data not intended for users of the Site or gaining unauthorized access to an account, server or any other computer system; (ii) attempting to probe, scan or test the vulnerability of a system or network or to breach security or authentication measures; (iii) attempting to interfere with the function of the Site, host or network, including, without limitation, via means of submitting a virus to the Site, overloading, “flooding”, “mailbombing”, “crashing”, or sending unsolicited e-mail, including promotions and/or advertising of products or services; or (iv) forging any TCP/IP packet header or any part of the header information in any e-mail or newsgroup posting. Violations of the Site’s or Rayn’s systems or network security may result in civil or criminal liability.</p>
+
+              <h4>Privacy Policy; User Information Not Confidential</h4>
+              <p>In the course of your use of the Site, you may provide certain information to us. Rayn also collects information during your visit to the Site through automatic data collection tools, including cookies, such as your IP address and clickstream behavior. Rayn uses this information to monitor site traffic, identify critical bugs, monitor Site health and find ways to improve the Site. Rayn also collects information such as name, email and contact details from its Call to Action buttons & contact forms on the Site’s page which is used to contact the user of the Site /provider of information. You acknowledge and agree that you are solely responsible for the accuracy and content of such information. Rayn does not agree to (1) any obligation of confidentiality, non-use, or non-disclosure, with respect to any information submitted to Rayn or (2) to review or return any information provided to Rayn, in each except as expressly stated. Do not provide any information that you consider to be proprietary or a trade secret, or which you desire to be treated as confidential. In no event shall Rayn be limited in, or restricted from, the pursuit of any opportunities, either alone or with third parties as a result of Rayn’s receipt of any information provided by you.</p>
+
+              <h4>Rayn’s Proprietary Rights</h4>
+              <p>The Site, including all of its contents, such as text, images, audio, and the HTML used to generate the pages, (“Content”), are the property of Rayn or that of our suppliers or licensors and are protected by patent, trademark and/or copyright under local and/or foreign laws. Except as otherwise provided herein, you may not use, download, upload, copy, print, display, perform, reproduce, publish, modify, prepare derivative works from, delete, add to, license, post, transmit, or distribute any Content from this Site in whole or in part, for any public or commercial purpose without the specific written permission of Rayn. Rayn hereby grants you a personal, non-exclusive, non-transferable license to access the Site, and to use the information and services available on the Site solely for personal, internal and non-commercial purposes. Except as otherwise provided herein, use of the Site does not grant you a license to any Content, features or materials you may access on the Site. Without Rayn’s prior permission, you agree not to display or use Rayn’s marks in any manner. Nothing on the Site should be construed to grant any license or right to use any Rayn’s mark without the prior written consent of Rayn.</p>
+
+              <h4>Links from and to the Site</h4>
+              <p>Express, written consent must be granted by Rayn for any type of link to the Site. Rayn reserves the right, at its discretion at any time, to deny any request, or rescind any permission granted, to link to the Site and to require termination of any such link to the Site. You may be able to link to third party websites (“Linked Sites”) from the Site. Linked Sites are not, however, reviewed, controlled or examined by Rayn in any way and Rayn is not responsible for the content, availability, advertising, products, information or use of user information or other materials of any such Linked Sites, or any additional links contained therein. These links do not imply Rayn’s endorsement of or association with the Linked Sites, even if Rayn is an investor in the third party business that controls such Linked Site(s). In no event shall Rayn be liable, directly or indirectly, to anyone for any loss or damage arising from or occasioned by the creation or use of the Linked Sites or the information or material accessed through these Linked Sites.</p>
+
+              <h4>Links from and to the Site</h4>
+              <p>Express, written consent must be granted by Rayn for any type of link to the Site. Rayn reserves the right, at its discretion at any time, to deny any request, or rescind any permission granted, to link to the Site and to require termination of any such link to the Site. You may be able to link to third party websites (“Linked Sites”) from the Site. Linked Sites are not, however, reviewed, controlled or examined by Rayn in any way and Rayn is not responsible for the content, availability, advertising, products, information or use of user information or other materials of any such Linked Sites, or any additional links contained therein. These links do not imply Rayn’s endorsement of or association with the Linked Sites, even if Rayn is an investor in the third party business that controls such Linked Site(s). In no event shall Rayn be liable, directly or indirectly, to anyone for any loss or damage arising from or occasioned by the creation or use of the Linked Sites or the information or material accessed through these Linked Sites.</p>
+
+              <h4>Disclaimer of Warranties</h4>
+              <p>The Site, including, without limitation, all content, function, materials and services, is provided “as is,” without warranty of any kind, either express or implied, including, without limitation, any warranty for information, data, data processing services or uninterrupted access, any warranties concerning the availability, accuracy, completeness, usefulness, or content of information, and any warranties of title, non-infringement, merchantability or fitness for a particular purpose. Rayn does not warrant that the site or the functions, content or services made available thereby will be timely, secure, uninterrupted or error free, or that defects will be corrected. Rayn makes no warranty that the site will meet users’ expectations or requirements. No advice, results or information, or materials whether oral or written, obtained by you through the site shall create any warranty not expressly made herein. If you are not satisfied with the site, your sole remedy is to discontinue using the site. You are not to construe the contents of this site as legal, tax or investment advice, or any solicitation to invest in any Rayn fund or portfolio company.</p>
+
+              <h4>Limitation of Liability and Indemnity</h4>
+              <p>To the greatest extent permitted under applicable law, in no event shall Rayn, its affiliates or any of their respective directors, officers, employees, agents, or content or service providers, be liable for any indirect, special, incidental, consequential, exemplary or punitive damages arising from or directly or indirectly related to the use of, or the inability to use, the Site or the content, materials and functions related thereto, including, without limitation, loss of revenue, or anticipated profits, or lost business, data or sales, or cost of substitute services, even if Rayn or its representative has been advised of the possibility of such damages. You agree to defend, indemnify and hold Rayn, its directors, officers, employees, agents and affiliates harmless from any and all claims, liabilities, damages, costs and expenses, including reasonable attorneys/lawyer’s fees, in any way arising from, related to or in connection with your use of the Site, your violation of these Terms or the posting or transmission of any materials on or through the Site by you, including, but not limited to, any third party claim that any information or materials you provide infringes any third party proprietary right.</p>
+
+              <h4>General Information</h4>
+              <p>You agree that the laws of Islamic Republic Of Pakistan, excluding its conflicts-of-law rules, shall govern these Terms. Please note that your use of the Site may be subject to other local, state, national, and international laws. You consent to the jurisdiction of the state and courts of Islamic Republic of Pakistan for enforcement of these Terms. The failure of Rayn to exercise or enforce any right or provision of these Terms shall not constitute a waiver of such right or provision. If any portion of these Terms is invalid or unenforceable in any jurisdiction, then (i) in that jurisdiction it shall be re-construed to the maximum effect permitted by law in order to effect its intent as nearly as possible, and the remainder of these Terms of Use shall remain in full force and effect, and (ii) in every other jurisdiction, all of these Terms of Use shall remain in full force and effect. You may not assign these Terms or any of your rights or obligations under these Terms without express written consent. These Terms inure to the benefit of Rayn’s successors, assignees and licensees. The Terms constitute the entire agreement between you and Rayn and govern your use of the Site, superseding any prior agreements between you and Rayn. You may also be subject to additional terms and conditions that are applicable to certain parts of the Site.</p>
+
+              
             </div>
           </div>
         </section>
         <footer id='footer' className='mt-auto text-white text-center py-lg-section bg-yellow'>
-          <div className='container'>
-            <div className='row'>
-              <div className='bg-yellow text-center'>
-              <div className='offset-md-2 col-md-8'>
-              <h2 className='w-100 text-center text-white mx-auto'>Chat your way to better business decisions</h2>
-              <p className='text-white'>Learn more about how your business can benefit from ekai’s features.</p>
-                {/* <a href='#' className='btnsolid whiteco' data-bs-toggle='modal' data-bs-target='#reachout'>Get Started Now</a> */}
-                {/* <Image className='d-block mx-auto mt-2 mt-md-4' src='/assets/images/business-decision.png' alt='image' /> */}
-                <ContactForm />
-              </div>
-              </div>
-            </div>
-          </div>
           <div className='container'>
               <div className='row py-lg-section footer-inner'>
                 <div className='col-md-3'>

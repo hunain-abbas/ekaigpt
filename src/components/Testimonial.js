@@ -8,66 +8,41 @@ import "swiper/components/scrollbar/scrollbar.min.css";
 SwiperCore.use([Scrollbar]);
 
 function Testimonial() {
-
-  // const swiperRef = useRef(null);
-
-  // // Function to handle scroll event
-  // const handleScroll = (event) => {
-  //   // Check if swiperRef is initialized and event.deltaY is defined
-  //   if (swiperRef.current && typeof event.deltaY === 'number') {
-  //     // Check scroll direction
-  //     if (event.deltaY > 0) {
-  //       // Scroll down, go to next slide
-  //       swiperRef.current.swiper.slideNext();
-  //     } else {
-  //       // Scroll up, go to previous slide
-  //       swiperRef.current.swiper.slidePrev();
-  //     }
-  //   }
-  // };
-
-  // // Add event listener for scroll on component mount
-  // useEffect(() => {
-  //   window.addEventListener('wheel', handleScroll);
-  //   return () => {
-  //     window.removeEventListener('wheel', handleScroll);
-  //   };
-  // }, []);
   const swiperRef = useRef(null);
 
   useEffect(() => {
-    const handleScroll = (event) => {
-      if (
-        swiperRef.current &&
-        typeof event.deltaY === 'number' &&
-        isSwiperVisible()
-      ) {
-        const isAtFirstSlide = swiperRef.current.swiper.isBeginning;
-        const isAtLastSlide = swiperRef.current.swiper.isEnd;
+    // const handleScroll = (event) => {
+    //   if (
+    //     swiperRef.current &&
+    //     typeof event.deltaY === 'number' &&
+    //     isSwiperVisible()
+    //   ) {
+    //     const isAtFirstSlide = swiperRef.current.swiper.isBeginning;
+    //     const isAtLastSlide = swiperRef.current.swiper.isEnd;
 
-        if (!isAtFirstSlide && !isAtLastSlide) {
-          event.preventDefault();
-        }
+    //     if (!isAtFirstSlide && !isAtLastSlide) {
+    //       event.preventDefault();
+    //     }
 
-        if (event.deltaY > 0 && !isAtLastSlide) {
-          swiperRef.current.swiper.slideNext();
-        } else if (event.deltaY < 0 && !isAtFirstSlide) {
-          swiperRef.current.swiper.slidePrev();
-        }
-      }
-    };
+    //     if (event.deltaY > 0 && !isAtLastSlide) {
+    //       swiperRef.current.swiper.slideNext();
+    //     } else if (event.deltaY < 0 && !isAtFirstSlide) {
+    //       swiperRef.current.swiper.slidePrev();
+    //     }
+    //   }
+    // };
 
-    const isSwiperVisible = () => {
-      if (!swiperRef.current) return false;
-      const rect = swiperRef.current.getBoundingClientRect();
-      return rect.top >= 0 && rect.bottom <= window.innerHeight;
-    };
+    // const isSwiperVisible = () => {
+    //   if (!swiperRef.current) return false;
+    //   const rect = swiperRef.current.getBoundingClientRect();
+    //   return rect.top >= 0 && rect.bottom <= window.innerHeight;
+    // };
 
-    window.addEventListener('wheel', handleScroll);
+    // window.addEventListener('wheel', handleScroll);
 
-    return () => {
-      window.removeEventListener('wheel', handleScroll);
-    };
+    // return () => {
+    //   window.removeEventListener('wheel', handleScroll);
+    // };
   }, []);
 
   return (
