@@ -7,15 +7,14 @@ export default async function handler(req, res) {
 
       // Create a Nodemailer transporter
       const transporter = nodemailer.createTransport({
-        // Specify your SMTP settings here
-        // For example:
         host: 'smtp.gmail.com',
         port: 465,
-        secure: false,
+        secure: true, // Use secure connection
         auth: {
           user: 'website.mailer@rayn.group',
           pass: 'vkvnhgwfwepenlly'
-        }
+        },
+        authMethod: 'PLAIN' // Specify authentication method
       });
 
       // Send mail with defined transport object

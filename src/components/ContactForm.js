@@ -1,4 +1,3 @@
-// components/ContactForm.js
 import { useState } from 'react';
 
 const ContactForm = () => {
@@ -18,6 +17,8 @@ const ContactForm = () => {
     designation: false,
     discussion: false
   });
+  const [successMessage, setSuccessMessage] = useState('');
+  const [failureMessage, setFailureMessage] = useState('');
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -58,12 +59,25 @@ const ContactForm = () => {
       });
       if (response.ok) {
         console.log('Email sent successfully');
-        // Optionally, reset form state here
+        setSuccessMessage('Form submitted successfully!');
+        setFailureMessage('');
+        setFormData({
+          name: '',
+          email: '',
+          organization: '',
+          phone: '',
+          designation: '',
+          discussion: ''
+        });
       } else {
         console.error('Failed to send email');
+        setFailureMessage('Failed to submit form. Please try again later.');
+        setSuccessMessage('');
       }
     } catch (error) {
       console.error('Error sending email:', error);
+      setFailureMessage('Failed to submit form. Please try again later.');
+      setSuccessMessage('');
     }
   };
 
@@ -102,6 +116,8 @@ const ContactForm = () => {
         </div>
         <button type="submit" className="">Get Started Now</button>
       </div>
+      {successMessage && <div className="alert alert-success">{successMessage}</div>}
+      {failureMessage && <div className="alert alert-danger">{failureMessage}</div>}
     </form>
   );
 };

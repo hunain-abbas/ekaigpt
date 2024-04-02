@@ -139,7 +139,7 @@ function Testimonial() {
             <div className='testimonialbox text-center p-3 p-lg-4'>
               <div className='topbox mb-2 mb-lg-2'>
                 <img src='/assets/images/persona6.png' alt='image' />
-                <p>Customer support specialist</p>
+                <p>Customer Support Specialist</p>
               </div>
               <div className='bottombox'>
                 <p>Gain access to customer details and history that can inform your approach to provide more personalized support</p>

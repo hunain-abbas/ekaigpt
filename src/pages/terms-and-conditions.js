@@ -20,6 +20,21 @@ SwiperCore.use([Scrollbar]);
 
 export default function Home() {
   useEffect(() => {
+    // function scrollToAnchor(anchorId) {
+    //   const element = document.getElementById(anchorId);
+    //   if (element) {
+    //     element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    //   }
+    // }
+  
+    // // Add event listeners to anchor links to call scrollToAnchor function
+    // document.querySelectorAll('a').forEach(link => {
+    //   link.addEventListener('click', function(e) {
+    //     e.preventDefault(); // Prevent default anchor behavior
+    //     const anchorId = this.getAttribute('href').substring(1); // Remove leading '#'
+    //     scrollToAnchor(anchorId);
+    //   });
+    // });
     function scrollToAnchor(anchorId) {
       const element = document.getElementById(anchorId);
       if (element) {
@@ -28,13 +43,15 @@ export default function Home() {
     }
   
     // Add event listeners to anchor links to call scrollToAnchor function
-    document.querySelectorAll('a').forEach(link => {
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
       link.addEventListener('click', function(e) {
         e.preventDefault(); // Prevent default anchor behavior
-        const anchorId = this.getAttribute('href').substring(1); // Remove leading '#'
+        const href = this.getAttribute('href');
+        const anchorId = href.substring(1); // Remove leading '#'
         scrollToAnchor(anchorId);
       });
     });
+  
 }, []);
 
 
@@ -128,12 +145,12 @@ export default function Home() {
                 <div className='col-md-7'>
                   <nav className='nav'>
                     <a className='nav-link active' aria-current='page' href='#herosection'>Overview</a>
-                    <a className='nav-link' href='https://ekaigpt.vercel.app/#herosection'>How Ekai Works</a>
-                    <a className='nav-link' href='https://ekaigpt.vercel.app/terms-and-conditions'>Terms & Conditions</a>
-                    <a className='nav-link' href='https://ekaigpt.vercel.app/#features'>Features</a>
-                    <a className='nav-link' href='https://ekaigpt.vercel.app/#integrateekai'>Integrations</a>
-                    <a className='nav-link' href='https://ekaigpt.vercel.app/#testimonial'>Use Cases</a>
-                    <a className='nav-link' href='https://ekaigpt.vercel.app/#faqs'>FAQs</a>
+                    <a className='nav-link' href='https://www.ekai.ai/#herosection'>How Ekai Works</a>
+                    <a className='nav-link' href='https://www.ekai.ai/terms-and-conditions'>Terms & Conditions</a>
+                    <a className='nav-link' href='https://www.ekai.ai/#features'>Features</a>
+                    <a className='nav-link' href='https://www.ekai.ai/#integrateekai'>Integrations</a>
+                    <a className='nav-link' href='https://www.ekai.ai/#testimonial'>Use Cases</a>
+                    <a className='nav-link' href='https://www.ekai.ai/#faqs'>FAQs</a>
                   </nav> 
                 </div>
               </div>
